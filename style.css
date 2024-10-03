@@ -4,39 +4,27 @@ body, html {
     width: 100%;
     height: 100%;
     font-family: Arial, sans-serif;
-    overflow-x: hidden;
 }
 
 .container {
+    position: relative;
     width: 100%;
     height: 100vh;
+    background-image: url('https://github.com/iederees-create/mugbrewcoffe-croissants/blob/332f625a161474c0d9ea70ca61ff0945766b6ecf/WhatsApp%20Image%202024-10-03%20at%207.35.44%20AM.jpeg?raw=true');
+    background-size: cover;
+    background-position: center;
     display: flex;
-    justify-content: center;
     align-items: center;
-}
-
-.image-container {
-    position: relative;
-    width: 90%;
-    max-width: 1200px;
-}
-
-.image-container img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 20px;
+    justify-content: center;
 }
 
 .button-container {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    bottom: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
 }
 
 button {
@@ -56,13 +44,9 @@ button:hover {
     opacity: 1;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
     button {
         padding: 10px 20px;
         font-size: 1rem;
-    }
-
-    .button-container {
-        gap: 8px;
     }
 }
