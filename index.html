@@ -1,20 +1,52 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Book services or order products with ease. Contact us via WhatsApp to make a booking or place an order.">
-    <meta name="keywords" content="booking, order, WhatsApp, contact, services, products">
-    <link rel="stylesheet" href="style.css">
-    <title>Service Booking and Order</title>
-</head>
-<body>
-    <div class="container">
-        <div class="button-container">
-            <button id="orderNow">Order Now</button>
-            <button id="bookingsOpen">Bookings Open</button>
-        </div>
-    </div>
-    <script src="script.js"></script>
-</body>
-</html>
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://github.com/iederees-create/mugbrewcoffe-croissants/blob/332f625a161474c0d9ea70ca61ff0945766b6ecf/WhatsApp%20Image%202024-10-03%20at%207.35.44%20AM.jpeg?raw=true');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-container {
+    position: absolute;
+    bottom: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+button {
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    opacity: 0.85;
+}
+
+button:hover {
+    background-color: #0056b3;
+    opacity: 1;
+}
+
+@media only screen and (max-width: 600px) {
+    button {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}
